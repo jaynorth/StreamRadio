@@ -103,52 +103,40 @@
     <category>Gospel</category>
     <country>--</country>
   </station>
-  <station id="29">
+  <station id="27">
     <url>http://www.wifiradio-frontier.com/pls/pls31656.m3u</url>
     <name>FM Blues</name>
-    <category>--</category>
+    <category>Blues</category>
     <country>--</country>
   </station>
-  <station id="30">
+  <station id="28">
     <url>http://streams.wgbh.org:8000/listen.pls</url>
     <name>WGBH Jazz</name>
     <category>Jazz</category>
     <country>--</country>
   </station>
-  <station id="31">
-    <url>http://tinyurl.com/bossa-nova-pls</url>
-    <name>Bossa Nova Rio</name>
-    <category>--</category>
-    <country>Brazil</country>
-  </station>
-  <station id="33">
+  <station id="30">
     <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_one.m3u8</url>
     <name>BBC Radio 1</name>
     <category>--</category>
     <country>UK</country>
   </station>
-  <station id="34">
+  <station id="31">
     <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_two.m3u8</url>
     <name>BBC Radio 2</name>
     <category>--</category>
     <country>UK</country>
   </station>
-  <station id="35">
+  <station id="32">
     <url>http://91.221.151.155:80/;?.mp3</url>
     <name>Arrow Classic Rock</name>
     <category>Classic Rock</category>
-    <country>--</country>
+    <country>Holland</country>
   </station>
-  <station id="36">
+  <station id="33">
     <url>http://538hls.lswcdn.triple-it.nl/content/web22/index.m3u8</url>
     <name>Radio 10 90's Hits</name>
-    <category>--</category>
-    <country>--</country>
-  </station>
-  <station id="37">
-    <url>http://wm9.easystream.co.uk/herefordFM?MSWMExt=.asf</url>
-    <name>Sunshine Radio</name>
-    <category>--</category>
-    <country>--</country>
+    <category>Pop</category>
+    <country>Holland</country>
   </station>
 </stations>

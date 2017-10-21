@@ -6,10 +6,10 @@
         <xs:element maxOccurs="unbounded" name="station">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="url" minOccurs="1" maxOccurs="1"  type="urlPath" />
+              <xs:element name="url" type="urlPath" minOccurs="1" maxOccurs="1"   />
               <xs:element name="name" type="stationName" minOccurs="1" maxOccurs="1" />               
-              <xs:element name="category" type="xs:string" minOccurs="0" />
-              <xs:element name="country" type="xs:string" minOccurs="0" />
+              <xs:element name="category" type="CategoryName" minOccurs="0" />
+              <xs:element name="country" type="CountryName" minOccurs="0" />
             </xs:sequence>
             <xs:attribute name="id" type="xs:unsignedByte" use="optional" />
           </xs:complexType>        
@@ -22,11 +22,23 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="3"/>
       <xs:maxLength value="50"/>
+      <xs:whiteSpace value="collapse"/>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="urlPath">
     <xs:restriction base="xs:string">
       <xs:minLength value="8"/>
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CountryName">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CategoryName">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

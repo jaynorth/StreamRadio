@@ -34,7 +34,7 @@
         <Setter Property="Foreground" Value="GreenYellow"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Background" Value="Transparent"></Setter>
-        <Setter Property="Margin" Value="11, 9, 0, 20"></Setter>
+        <Setter Property="Margin" Value="11, 39, 0, 20"></Setter>
     </Style>
     <Style x:Key="SearchStyle" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
