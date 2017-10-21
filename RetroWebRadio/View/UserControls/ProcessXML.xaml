@@ -60,7 +60,7 @@
 
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label Content="Drag and Drop XML files to import"></Label>
-            <ListBox x:Name="listDrop" Height="Auto" Width="Auto" MinHeight="105" MinWidth="180" Margin="5"  AllowDrop="True" Drop="dropfiles" ItemsSource="{Binding DroppedItems}" >
+            <ListBox x:Name="listDrop" Height="Auto" Width="Auto" MinHeight="105" MaxHeight="120" MinWidth="180" Margin="5"  AllowDrop="True" Drop="dropfiles" ItemsSource="{Binding DroppedItems}" >
 
             </ListBox>
             <Button Content="Import" Command="{Binding Import}" Width="40" Style="{DynamicResource ImportStyle1}" ></Button>

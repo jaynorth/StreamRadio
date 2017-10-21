@@ -226,7 +226,10 @@ namespace ViewModelsXML.ViewModels
 
             foreach (var item in fileEntries)
             {
-               
+                ValidateXML xmlValidate = new ValidateXML();
+                if (xmlValidate.validate(item, IsShowValidationSucceeded))
+                {
+
                     AddXml(item);
 
                     //Move file to Processed Folder
@@ -240,6 +243,8 @@ namespace ViewModelsXML.ViewModels
 
                     //Update FileList
                     _fileList.Remove(fileName);
+                }
+               
             }
 
             GetFileListInApplicationFolder(AppXmlFolderToBeProcessed);

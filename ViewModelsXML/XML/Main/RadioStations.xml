@@ -16,7 +16,7 @@
   <station id="12">
     <url>http://listen.xray.fm:8000/stream</url>
     <name>Xray</name>
-    <category>independent</category>
+    <category>various</category>
     <country>USA</country>
   </station>
   <station id="13">
@@ -59,7 +59,7 @@
     <url>http://1.ice1.firststreaming.com/kkjz_fm.mp3</url>
     <name>KKJZ - KJazz 88.1</name>
     <category>Jazz</category>
-    <country>--</country>
+    <country>USA</country>
   </station>
   <station id="20">
     <url>http://sj128.hnux.com</url>
@@ -81,9 +81,9 @@
   </station>
   <station id="23">
     <url>http://stream.xmission.com:8000/kpcw</url>
-    <name>KPCW Radio, Park City, Utah</name>
+    <name>KPCW Radio</name>
     <category>News</category>
-    <country>--</country>
+    <country>USA</country>
   </station>
   <station id="24">
     <url>http://198.178.123.11:7080</url>
@@ -115,25 +115,25 @@
     <category>Jazz</category>
     <country>--</country>
   </station>
-  <station id="30">
+  <station id="29">
     <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_one.m3u8</url>
     <name>BBC Radio 1</name>
     <category>--</category>
     <country>UK</country>
   </station>
-  <station id="31">
+  <station id="30">
     <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_two.m3u8</url>
     <name>BBC Radio 2</name>
     <category>--</category>
     <country>UK</country>
   </station>
-  <station id="32">
+  <station id="31">
     <url>http://91.221.151.155:80/;?.mp3</url>
     <name>Arrow Classic Rock</name>
     <category>Classic Rock</category>
     <country>Holland</country>
   </station>
-  <station id="33">
+  <station id="32">
     <url>http://538hls.lswcdn.triple-it.nl/content/web22/index.m3u8</url>
     <name>Radio 10 90's Hits</name>
     <category>Pop</category>
