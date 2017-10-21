@@ -4,11 +4,11 @@
 
 <stations>
   
-<station >
+<station id="5">
     
 <url>http://rrrrrrrrrrrrrr</url>
    
- <name>YEAHHHHHHHHHHHHHHHHHHH</name>
+ <name>test</name>
    
  <category></category>
    

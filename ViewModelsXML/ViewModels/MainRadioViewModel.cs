@@ -230,7 +230,7 @@ namespace ViewModelsXML.ViewModels
                 if (xmlValidate.validate(item, IsShowValidationSucceeded))
                 {
 
-                    AddXml(item);
+                    AddXml(item, true);
 
                     //Move file to Processed Folder
                     //GetsFileName
@@ -283,6 +283,25 @@ namespace ViewModelsXML.ViewModels
                 StationList = rsRep.CleanMainList(StationList);
             }
             
+        }
+
+        private void AddXml(string filePath, bool Validated)
+        {
+
+            if (Validated) {
+                XDocument NewDoc = XDocument.Load(filePath);
+
+                RadioStationRepository rsRep = new RadioStationRepository();
+                rsRep.AddStations(NewDoc, StationList);
+                StationList = rsRep.CleanMainList(StationList);
+            }
+            else
+            {
+                MessageBox.Show("document will now be checked for XSD Validation");
+                AddXml(filePath);
+            }
+
+
         }
 
         private void RemoveStation()
