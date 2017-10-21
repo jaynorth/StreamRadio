@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="Resources/ProcessXmlDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/RadioListsDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/AppMainWindowDictionary.xaml"/>
+                <ResourceDictionary Source="VolumeSliderDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
            
         </ResourceDictionary>

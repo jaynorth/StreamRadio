@@ -55,9 +55,9 @@
         <Button x:Name="stop_button" Content="Stop" Grid.Column="3" Grid.Row="3"   Click="stopButton_Click" Style="{DynamicResource PauseStyle}" Margin="0,0.7,0,-0.384" />
 
         <Label Content="Volume" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" FontWeight="SemiBold"></Label>
-        <Slider x:Name="volumeSlider"  Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal"   ValueChanged="volumeSlider_ValueChanged" Minimum="0" Maximum="1"  VerticalAlignment="Center"  HorizontalAlignment="Stretch" Width="Auto"  Value="0" TickPlacement="TopLeft" TickFrequency="0.1" Style="{DynamicResource SliderStyle1}" Template="{DynamicResource SliderHorizontal}" />
+        <Slider x:Name="volumeSlider"  Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Orientation="Horizontal"   ValueChanged="volumeSlider_ValueChanged" Minimum="0" Maximum="1"  VerticalAlignment="Center"  HorizontalAlignment="Stretch" Width="Auto"  Value="0" TickPlacement="TopLeft" TickFrequency="0.1" IsMoveToPointEnabled="True" Style="{DynamicResource SliderStyle1}" Foreground="Black"  />
 
-        
+
         <MediaElement x:Name="Player" LoadedBehavior="Manual"     Volume="0" />
 
        
