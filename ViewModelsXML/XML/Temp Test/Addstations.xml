@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="10">
+    <url>http://206.190.136.140:5022/;stream/1</url>
+    <name>           Music City Roadhouse</name>
+    <category>Electric Blues </category>
+    <country>USA</country>
+  </station>
+
+ <station id="10">
+    <url>http://808.rastamusic.com/rastamusic.mp3</url>
+    <name>808 Live Reggaecast</name>
+    <category>Reggae</category>
+    <country>unknown</country>
+  </station>
+
+<station id="10">
+    <url>http://1.ice1.firststreaming.com/kkjz_fm.mp3</url>
+    <name>KKJZ - KJazz 88.1</name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url>http://sj128.hnux.com</url>
+    <name>SmoothJazz.com Global Radio</name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url>http://mitm.digistream.info:8052/</url>
+    <name>Martini in the Morning</name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url>
+
+</url>
+    <name>
+VIBRATION POPROCK 
+</name>
+    <category>
+Grunge
+</category>
+    <country>
+
+</country>
+  </station>
+<station id="10">
+    <url>
+http://stream.xmission.com:8000/kpcw
+</url>
+    <name>
+KPCW Radio, Park City, Utah
+</name>
+    <category>
+News
+</category>
+    <country>
+
+</country>
+  </station>
+<station id="10">
+    <url>
+http://198.178.123.11:7080
+</url>
+    <name>
+	
+MPIR Old Time Radio
+</name>
+    <category>
+Old School
+</category>
+    <country>
+
+</country>
+  </station>
+<station id="10">
+    <url>
+http://live.francra.org:8000/CouleursFM
+</url>
+    <name>
+Couleurs FM
+</name>
+    <category>
+Rock
+</category>
+    <country>
+France
+</country>
+  </station>
+<station id="10">
+    <url>
+http://199.180.72.29:8000
+</url>
+    <name>
+Southern Gospel Radio
+</name>
+    <category>
+Gospel
+</category>
+    <country>
+
+</country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url>bla</url>
+    <name>test</name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+<station id="10">
+    <url></url>
+    <name></name>
+    <category></category>
+    <country></country>
+  </station>
+
+</stations>

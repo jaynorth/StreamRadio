@@ -1,0 +1,105 @@
+﻿<Window x:Class="RetroWebRadio.View.CopyMainWindow"
+       
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RetroWebRadio.View"
+        xmlns:tools="clr-namespace:ViewModelsXML.Tools;assembly=ViewModelsXML"
+        xmlns:userControls="clr-namespace:RetroWebRadio.View.UserControls"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="False"  
+                           
+        
+        
+       Height="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}, Converter={tools:RatioConverter}, ConverterParameter='0.6' }" 
+     Width="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}, Converter={tools:RatioConverter}, ConverterParameter='0.6' }"
+      MinHeight="600"
+        MinWidth="950"
+   
+        WindowStartupLocation="CenterScreen"
+        
+        Title="StreamRadio" 
+        ResizeMode="CanResizeWithGrip"  Closing="Window_Closing"
+        >
+    <!--if AllowsTransparency set to True Winforms cannot be displayed-->
+    
+    
+    <Border BorderBrush="Black" BorderThickness="10" MouseLeftButtonDown="Border_MouseLeftButtonDown" >
+    <Grid ShowGridLines="False" Background="Black">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="11*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="53*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="41*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.Row="1" Grid.RowSpan="6" Grid.Column="2" Grid.ColumnSpan="5" RadiusX="18" RadiusY="18">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Images/RustyMetal_texture.jpg" Stretch="UniformToFill"/>
+
+            </Rectangle.Fill>
+        </Rectangle>
+        <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBox x:Name="SearchTextBox" Text="{Binding searchstring, UpdateSourceTrigger=PropertyChanged}" Width="180" Margin="0, 0, 0, 0" VerticalAlignment="Center" Height="30" VerticalContentAlignment="Center" GotFocus="TextBox_GotFocus" Background="Transparent" Foreground="White" BorderBrush="Gray" >
+                <TextBox.InputBindings>
+                    <KeyBinding Command="{Binding Search}" Key="Return" />
+                </TextBox.InputBindings>
+            </TextBox>
+            <Button x:Name="SearchButton" Content="Search" Command="{Binding Search}" Margin="5,5,0,5" VerticalAlignment="Center" Height="30" Padding="5" VerticalContentAlignment="Center" Background="Transparent" Foreground="White" BorderBrush="Gray"/>
+        </StackPanel>
+
+
+        <Border Grid.Row="2" Grid.Column="3" Grid.RowSpan="3" BorderBrush="Gray" BorderThickness="5" CornerRadius="10">
+
+
+            <userControls:RadioLists x:Name="RadioListsUC" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  >
+            </userControls:RadioLists>
+
+        </Border>
+
+        <userControls:Dashboard x:Name="dashboardUserControl" Grid.Row="4" Grid.Column="5" Grid.RowSpan="1"  />
+        <TabControl Grid.Column="5"  Grid.Row="2" Background="Transparent" BorderBrush="Transparent" >
+            <TabItem Header="Spectrum" HorizontalAlignment="Left">
+                <userControls:SpectrumUserControl  />
+            </TabItem>
+            <TabItem Header="XML" HorizontalAlignment="Right">
+                <userControls:ProcessXML  />
+            </TabItem>
+
+        </TabControl>
+
+        <userControls:EditList Grid.Row="6" Grid.Column="3"></userControls:EditList>
+        <!--<Button x:Name="Maximize" Content="Button" Grid.Column="5" HorizontalAlignment="Right" Margin="0,3,15,2.396" Style="{DynamicResource MaximizeStyle}" Width="30" Height="30" VerticalAlignment="Top" Click="Maximize_Click"/>
+        <Button x:Name="Minimize" Content="Button" Grid.Column="5" HorizontalAlignment="Right" Margin="0,3,50,2.396" Width="30" Style="{DynamicResource MinimizeStyle}" VerticalAlignment="Top" Click="Minimize_Click"/>-->
+      
+        <Button Content="[ ]" Grid.Column="5" HorizontalAlignment="Right" Margin="0,3,15,2.396" Width="30" Height="30" VerticalAlignment="Top" Click="Maximize_Click" Foreground="White" Background="Transparent"></Button>
+        <Button Content="-" Grid.Column="5" HorizontalAlignment="Right" Margin="0,3,50,2.396" Width="30" Height="30" VerticalAlignment="Top" Foreground="White" Background="Transparent" Click="Minimize_Click" /> 
+        <Button Content="[X]"  VerticalAlignment="Top" Height="Auto" Grid.Row="0" Grid.Column="6" Foreground="White" Background="Transparent"  Click="Button_Click" Margin="-10,3,0,0" Style="{DynamicResource closeButtonStyle}"/>
+
+        <Label x:Name="AppTitleLabel" Content="StreamRadio V1" Grid.Column="3" HorizontalAlignment="Left" Width="195" Height="Auto" BorderBrush="White" Foreground="White" Style="{DynamicResource AppTitleLabelStyle}"/>
+           
+    </Grid>
+    </Border>
+</Window>

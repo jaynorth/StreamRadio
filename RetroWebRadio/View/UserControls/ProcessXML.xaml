@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="RetroWebRadio.View.UserControls.ProcessXML"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RetroWebRadio.View.UserControls"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+
+
+             mc:Ignorable="d" 
+             d:DesignHeight="186" d:DesignWidth="466">
+    <UserControl.Resources>
+      
+    </UserControl.Resources>
+    <Grid ShowGridLines="False" >
+        <Grid.Background>
+
+            <ImageBrush ImageSource="../../Images/Brushed_metal_text.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"></RowDefinition>
+            <RowDefinition Height="33*"></RowDefinition>
+            <RowDefinition Height="33*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" Margin="5" >
+            <Border BorderBrush="Gray" BorderThickness="0" CornerRadius="6" Padding="2">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" >
+                    <Label Content="XML File"></Label>
+                    <Button Content="Browse" Command="{Binding Browse}" Height="Auto" Style="{DynamicResource BrowseStyle1}"></Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="5" >
+            <Border BorderBrush="Gray" BorderThickness="0" CornerRadius="6" Padding="2">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="1">
+                    <Label Content="Main XML"></Label>
+                    <Button Content="Save" Command="{Binding Save}" Height="Auto" Style="{DynamicResource ButtonStyleXML3}"></Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center"  Margin="5">
+            <Border BorderBrush="Gray" BorderThickness="0" CornerRadius="6" Padding="2" >
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="2">
+                    <TextBlock Text="Files in Application Folder" Foreground="Black" />
+                    <TextBlock  Text="{Binding FileList.Count, StringFormat='Currently {0} file(s) waiting ' }" Foreground="Black"></TextBlock>
+
+                    <Button Content="Process" Command="{Binding ToBeProcessed}" Height="Auto" Style="{DynamicResource ProcessStyle1}"></Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Drag and Drop XML files to import"></Label>
+            <ListBox x:Name="listDrop" Height="Auto" Width="Auto" MinHeight="105" MinWidth="180" Margin="5"  AllowDrop="True" Drop="dropfiles" ItemsSource="{Binding DroppedItems}" >
+
+            </ListBox>
+            <Button Content="Import" Command="{Binding Import}" Width="40" Style="{DynamicResource ImportStyle1}" ></Button>
+
+        </StackPanel>
+
+
+       
+
+    </Grid>
+</UserControl>

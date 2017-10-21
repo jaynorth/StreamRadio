@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="18">
+    <url>http://listen.xray.fm:8000/stream</url>
+    <name>Xray</name>
+    <category>independent radio station</category>
+    <country>USA, Portland</country>
+  </station>
+  <station id="19">
+    <url>https://wwoz-sc.streamguys1.com/wwoz-hi.mp3</url>
+    <name>WWOZ New Orleans 90.7 FM</name>
+    <category>New Orleans Local radio</category>
+    <country>USA, New Orleans</country>
+  </station>
+  <station id="20">
+    <url>http://patmos.cdnstream.com:9300/live?cb=74209.mp3</url>
+    <name>Radio Free Brooklyn</name>
+    <category>various</category>
+    <country>USA, Brooklyn</country>
+  </station>
+  </stations>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="10">
+    <url>http://streams.wgbh.org:8000/l98isten.pls</url>
+    <name>ab</name>
+    <category>Jazz</category>
+    <country></country>
+  </station>
+
+
+
+</stations>

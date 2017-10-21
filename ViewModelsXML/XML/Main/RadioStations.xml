@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="10">
+    <url>http://patmos.cdnstream.com:9300/live?cb=74209.mp3</url>
+    <name>Radio Free Brooklyn</name>
+    <category>various</category>
+    <country>USA</country>
+  </station>
+  <station id="11">
+    <url>http://mozart.wkar.msu.edu:80/wkar-jazz</url>
+    <name>WKAR Jazz</name>
+    <category>Jazz</category>
+    <country>USA</country>
+  </station>
+  <station id="12">
+    <url>http://listen.xray.fm:8000/stream</url>
+    <name>Xray</name>
+    <category>independent</category>
+    <country>USA</country>
+  </station>
+  <station id="13">
+    <url>http://40s50s4fun.com:8000/low</url>
+    <name>country alternative 70s</name>
+    <category>country</category>
+    <country>USA</country>
+  </station>
+  <station id="14">
+    <url>http://96.126.107.232:8004</url>
+    <name>World Harmony Mix</name>
+    <category>Ethnic Fusion</category>
+    <country>JAPAN</country>
+  </station>
+  <station id="15">
+    <url>http://stream-uk1.radioparadise.com:80/mp3-128</url>
+    <name>Supernova Radio</name>
+    <category>Eclectic gold</category>
+    <country>UK</country>
+  </station>
+  <station id="16">
+    <url>http://50.7.77.114:8479/autodj</url>
+    <name>Cyprus Dub Community Radio</name>
+    <category>Reggae</category>
+    <country>Jamaica</country>
+  </station>
+  <station id="17">
+    <url>http://icecast.radiovox.org:8000/live.mp3</url>
+    <name>RADIOVOX</name>
+    <category>Talk</category>
+    <country>Brazil</country>
+  </station>
+  <station id="18">
+    <url>http://808.rastamusic.com/rastamusic.mp3</url>
+    <name>808 Live Reggaecast</name>
+    <category>Reggae</category>
+    <country>--</country>
+  </station>
+  <station id="19">
+    <url>http://1.ice1.firststreaming.com/kkjz_fm.mp3</url>
+    <name>KKJZ - KJazz 88.1</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="20">
+    <url>http://sj128.hnux.com</url>
+    <name>SmoothJazz.com Global Radio</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="21">
+    <url>http://206.190.136.140:5022/;stream/1</url>
+    <name>Music City Roadhouse</name>
+    <category>Electric Blues</category>
+    <country>USA</country>
+  </station>
+  <station id="22">
+    <url>http://mitm.digistream.info:8052/</url>
+    <name>Martini in the Morning</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="23">
+    <url>http://stream.xmission.com:8000/kpcw</url>
+    <name>KPCW Radio, Park City, Utah</name>
+    <category>News</category>
+    <country>--</country>
+  </station>
+  <station id="24">
+    <url>http://198.178.123.11:7080</url>
+    <name>MPIR Old Time Radio</name>
+    <category>Old School</category>
+    <country>--</country>
+  </station>
+  <station id="25">
+    <url>http://live.francra.org:8000/CouleursFM</url>
+    <name>Couleurs FM</name>
+    <category>Rock</category>
+    <country>France</country>
+  </station>
+  <station id="26">
+    <url>http://199.180.72.29:8000</url>
+    <name>Southern Gospel Radio</name>
+    <category>Gospel</category>
+    <country>--</country>
+  </station>
+  <station id="29">
+    <url>http://www.wifiradio-frontier.com/pls/pls31656.m3u</url>
+    <name>FM Blues</name>
+    <category>--</category>
+    <country>--</country>
+  </station>
+  <station id="30">
+    <url>http://streams.wgbh.org:8000/listen.pls</url>
+    <name>WGBH Jazz</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="31">
+    <url>http://tinyurl.com/bossa-nova-pls</url>
+    <name>Bossa Nova Rio</name>
+    <category>--</category>
+    <country>Brazil</country>
+  </station>
+  <station id="33">
+    <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_one.m3u8</url>
+    <name>BBC Radio 1</name>
+    <category>--</category>
+    <country>UK</country>
+  </station>
+  <station id="34">
+    <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_two.m3u8</url>
+    <name>BBC Radio 2</name>
+    <category>--</category>
+    <country>UK</country>
+  </station>
+  <station id="35">
+    <url>http://91.221.151.155:80/;?.mp3</url>
+    <name>Arrow Classic Rock</name>
+    <category>Classic Rock</category>
+    <country>--</country>
+  </station>
+  <station id="36">
+    <url>http://538hls.lswcdn.triple-it.nl/content/web22/index.m3u8</url>
+    <name>Radio 10 90's Hits</name>
+    <category>--</category>
+    <country>--</country>
+  </station>
+  <station id="37">
+    <url>http://wm9.easystream.co.uk/herefordFM?MSWMExt=.asf</url>
+    <name>Sunshine Radio</name>
+    <category>--</category>
+    <country>--</country>
+  </station>
+</stations>
