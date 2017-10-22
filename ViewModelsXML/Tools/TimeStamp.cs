@@ -9,6 +9,8 @@ namespace ViewModelsXML.Tools
 {
     public static class TimeStamp
     {
+
+        //This class creates a timestamp appended to processed files
         public static string AppendTimeStamp(this string fileName)
         {
             return string.Concat(

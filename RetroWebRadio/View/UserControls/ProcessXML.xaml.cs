@@ -27,15 +27,11 @@ namespace RetroWebRadio.View.UserControls
         {
             InitializeComponent();
 
-            //this.FontSize = 11;
-            //this.Foreground = Brushes.White;
-
-
         }
 
         private void dropfiles(object sender, DragEventArgs e)
         {
-
+            //Drag and Drop section
 
             string[] droppedFiles = null;
 

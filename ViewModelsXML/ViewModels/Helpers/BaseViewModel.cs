@@ -13,6 +13,7 @@ namespace ViewModelsXML.ViewModels.Helpers
     {
         public BaseViewModel()
         {
+            //path to XML database
             string MainXmlFilePath = "../../../ViewModelsXML/XML/Main/RadioStations.xml";
 
             doc = XDocument.Load(MainXmlFilePath);

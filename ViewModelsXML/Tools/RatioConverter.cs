@@ -12,6 +12,10 @@ namespace ViewModelsXML.Tools
     [ValueConversion(typeof(string), typeof(string))]
     public class RatioConverter : MarkupExtension, IValueConverter
     {
+
+        //This class helps resizing the APP window to the screen of the PC being used
+
+
         private static RatioConverter _instance;
 
         public RatioConverter() { }

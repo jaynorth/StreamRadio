@@ -38,6 +38,7 @@ namespace RetroWebRadio.View
             this.FontSize = 11;
             this.Foreground = Brushes.White;
 
+            //Subscribes to Radio selection changed
             RadioListsUC.StationSelectedEvent += ChangePlayerSource;
         }
 
@@ -45,15 +46,12 @@ namespace RetroWebRadio.View
       
         private void ChangePlayerSource(RadioStation CurrentStation)
         {
-
+            //This will prevent the audio digital noise when changing station 
             dashboardUserControl.Player.IsMuted = true;
             System.Threading.Thread.Sleep(600);
 
-
-
             if (CurrentStation!=null)
             {
-                
 
                 try
                 {
@@ -87,7 +85,7 @@ namespace RetroWebRadio.View
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
-            // Shutdown the application.
+            // Stop player
             dashboardUserControl.Player.IsMuted = true;
             dashboardUserControl.Player.Stop();
             //kill processes
@@ -102,7 +100,6 @@ namespace RetroWebRadio.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
 
             App.Current.Shutdown();
           

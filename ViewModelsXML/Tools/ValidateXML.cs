@@ -13,6 +13,7 @@ namespace ViewModelsXML.Tools
 {
     public  class ValidateXML
     {
+        //This class Takes care of validating XML files against the XSD file being used
 
         public ValidateXML()
         {
@@ -36,7 +37,6 @@ namespace ViewModelsXML.Tools
                 doc.Validate(schema, (s, e) =>
                 {
 
-                    //MessageBox.Show(Filename + " is not valid: " + e.Message);
                     MessageBox.Show(Filename + ": XSD validation failed\n" +e.Message);
 
                     Validated = false;
@@ -44,7 +44,7 @@ namespace ViewModelsXML.Tools
 
                 if (Validated == false)
                 {
-                  //  MessageBox.Show(Filename + ": XSD validation failed" );
+                  //  not being used at this point, might be useful later
                 }
                 else if (showSucceedMessage)
                 {
@@ -74,8 +74,6 @@ namespace ViewModelsXML.Tools
           
                 doc.Validate(schema, (s, e) =>
                 {
-
-                    //MessageBox.Show(Filename + " is not valid: " + e.Message);
 
                     Validated = false;
                 });

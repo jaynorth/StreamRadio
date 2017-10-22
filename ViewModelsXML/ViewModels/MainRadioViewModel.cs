@@ -30,9 +30,10 @@ namespace ViewModelsXML.ViewModels
             GetFileListInApplicationFolder(AppXmlFolderToBeProcessed);
 
 
-            //Show Message Box when XSD validation succeeded
+            //Show Message Box when XSD validation succeeded, if false then no message is displayed on success
             IsShowValidationSucceeded = false;
 
+            //collection of files being dropped in the XML section
             _droppedItems = new ObservableCollection<string>();
             InitCommands();
 
@@ -40,6 +41,8 @@ namespace ViewModelsXML.ViewModels
 
         }
 
+
+        //Commands
         private void InitCommands()
         {
             Import = new RelayCommand(AddDroppedXml);
@@ -59,12 +62,17 @@ namespace ViewModelsXML.ViewModels
         public RelayCommand Search { get; set; }
         public RelayCommand ToBeProcessed { get; set; }
 
-        public string searchstring { get; set; } = "search here";
+        //End of Commands
+
+
+      
 
         public ObservableCollection<RadioStation> UnfilteredList { get; set; }
 
         public bool IsShowValidationSucceeded { get; set; }
 
+
+        //Drag and drop section of the XML Dashboard
         public void DoFileDrop(IEnumerable<String> filePaths)
         {
             
@@ -98,6 +106,8 @@ namespace ViewModelsXML.ViewModels
             }
         }
 
+        //End of Drag and dropped section
+
         private ObservableCollection<RadioStation> _stationList;
 
         public ObservableCollection<RadioStation> StationList
@@ -128,17 +138,11 @@ namespace ViewModelsXML.ViewModels
         }
 
 
-       
-
-
-
         public string AppXmlFolderToBeProcessed { get; set; }
 
 
         private void LoadXmlData()
         {
-
-            //xmlValidation.validate(path, false);
 
             RadioStationRepository rsRep = new RadioStationRepository();
 
@@ -330,6 +334,11 @@ namespace ViewModelsXML.ViewModels
             
             
         }
+
+
+        /// seach bar section
+
+        public string searchstring { get; set; } = "search here";
 
         public void LoadListView()
         {

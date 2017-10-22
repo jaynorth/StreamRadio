@@ -31,8 +31,6 @@ namespace RetroWebRadio.View.UserControls
         {
             InitializeComponent();
 
-           
-           
 
         }
 
@@ -42,6 +40,7 @@ namespace RetroWebRadio.View.UserControls
 
         private void datagridRadioList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //Will notify of Radio Selection changed to player
             if (datagridRadioList.SelectedItem!=null)
             {
                 StationSelectedEvent((RadioStation)datagridRadioList.SelectedItem);

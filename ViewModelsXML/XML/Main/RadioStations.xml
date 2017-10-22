@@ -63,7 +63,7 @@
   </station>
   <station id="20">
     <url>http://sj128.hnux.com</url>
-    <name>SmoothJazz.com Global Radio</name>
+    <name>SmoothJazz.com</name>
     <category>Jazz</category>
     <country>--</country>
   </station>
@@ -88,8 +88,8 @@
   <station id="24">
     <url>http://198.178.123.11:7080</url>
     <name>MPIR Old Time Radio</name>
-    <category>Old School</category>
-    <country>--</country>
+    <category>Old Time</category>
+    <country>USA</country>
   </station>
   <station id="25">
     <url>http://live.francra.org:8000/CouleursFM</url>

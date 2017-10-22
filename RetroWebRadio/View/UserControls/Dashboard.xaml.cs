@@ -65,17 +65,13 @@ namespace RetroWebRadio.View.UserControls
         {
             
             string s = "buffer ended";
-            //BufferProgress.Value = Player.BufferingProgress * 100;
             double v = Player.BufferingProgress * 100;
             displayBox.Text = s + " " + v.ToString();
 
             string b = (Player.BufferingProgress * 100).ToString();
             displayBox.Text = "Buffer Progress " + b + " %";
             dt.Stop();
-           // displayBox.Text = "Playing ...";
 
- 
-            // displayBox.Text += " " + Player.NaturalDuration;
         }
 
         private void dt_Tick(object sender, EventArgs e)
@@ -104,7 +100,6 @@ namespace RetroWebRadio.View.UserControls
 
             Player.Play();
             displayBox.Text = "Attempt to play Stream";
-            //RadioOff.IsChecked = true;
         
             pause_button.IsEnabled = true;
             pause = false;
@@ -119,8 +114,6 @@ namespace RetroWebRadio.View.UserControls
             play_button.Foreground = new SolidColorBrush(Colors.Black);
             pause_button.Foreground = new SolidColorBrush(Colors.Black);
             displayBox.Text = "Stopped";
-            //RadioOff.IsChecked = false;
-
             pause_button.IsEnabled = false;
         }
 
@@ -173,16 +166,6 @@ namespace RetroWebRadio.View.UserControls
             Player.Volume = vol;
         }
 
-      
-
-        private void TargetEventhandler(object sender, DataTransferEventArgs e)
-        {
-            
-            
-            //
-            
-
-        }
 
         
     }

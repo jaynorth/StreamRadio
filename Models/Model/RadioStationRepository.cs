@@ -63,7 +63,6 @@ namespace Models.Model
 
             //find existing top Id in Main List
 
-            //var topId = MainRadioViewModel.StationList.Max(t => t.Id);
             var topId = StationList.Max(t => t.Id);
 
             //This will update the list that displays the stations on the main window
@@ -159,6 +158,7 @@ namespace Models.Model
 
             foreach (var item in StationList)
             {
+                TrimItems(item);
                 FillEmptyString(item);
             }
 
@@ -170,6 +170,7 @@ namespace Models.Model
 
         public void SaveXML(XDocument doc)
         {
+            //Saves/overwrites  to Main XML database
             doc.Save(@"..\..\..\ViewModelsXML\XML\Main\RadioStations.xml");
         }
     }

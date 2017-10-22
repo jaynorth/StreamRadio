@@ -25,7 +25,8 @@ namespace RetroWebRadio.View.UserControls
         public SpectrumUserControl()
         {
             InitializeComponent();
-
+             
+            //handling Winforms
             Form1 spectForm = new Form1();
             spectForm.TopLevel = false;
             spectForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
