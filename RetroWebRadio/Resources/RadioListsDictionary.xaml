@@ -6,7 +6,6 @@
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Gray"></Setter>
         <Setter Property="Foreground" Value="GreenYellow"></Setter>
-        <!--<Setter Property="Opacity" Value="0.1"></Setter>-->
     </Style>
 
 
@@ -14,8 +13,6 @@
     <Style  TargetType="{x:Type DataGrid}">
 
         <Setter Property="Foreground" Value="GreenYellow" />
-        <!--<Setter Property="Background" Value="Red"></Setter>-->
-
 
     </Style>
     <Style  TargetType="{x:Type DataGridCell}" >
