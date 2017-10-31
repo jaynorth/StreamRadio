@@ -147,7 +147,7 @@ namespace ViewModelsXML.ViewModels
             RadioStationRepository rsRep = new RadioStationRepository();
 
             StationList = rsRep.GetStations(doc);
-            UnfilteredList = StationList;
+           // UnfilteredList = StationList;
 
         }
 
@@ -283,8 +283,16 @@ namespace ViewModelsXML.ViewModels
                 XDocument NewDoc = XDocument.Load(filePath);
 
                 RadioStationRepository rsRep = new RadioStationRepository();
+                if (UnfilteredList != null)
+                {
+                    StationList = UnfilteredList;
+                }
                 rsRep.AddStations(NewDoc, StationList);
                 StationList = rsRep.CleanMainList(StationList);
+                if (UnfilteredList != null)
+                {
+                    UnfilteredList = StationList;
+                }
             }
             
         }
@@ -296,8 +304,13 @@ namespace ViewModelsXML.ViewModels
                 XDocument NewDoc = XDocument.Load(filePath);
 
                 RadioStationRepository rsRep = new RadioStationRepository();
+                if (UnfilteredList != null)
+                {
+                    StationList = UnfilteredList;
+                }
                 rsRep.AddStations(NewDoc, StationList);
                 StationList = rsRep.CleanMainList(StationList);
+               
             }
             else
             {
@@ -311,14 +324,24 @@ namespace ViewModelsXML.ViewModels
         private void RemoveStation()
         {
             RadioStationRepository rsRep = new RadioStationRepository();
-            StationList= rsRep.RemoveStation(CurrentStation, StationList);
-            UnfilteredList = StationList;
+            if (UnfilteredList != null)
+            {
+                UnfilteredList.Remove(CurrentStation);
+            }
+            StationList = rsRep.RemoveStation(CurrentStation, StationList);
+            
         }
 
         private void SaveListToXML()
         {
+            if (UnfilteredList!=null)
+            {
+                StationList = UnfilteredList;
+            }
+           
             RadioStationRepository rsRep = new RadioStationRepository();
-            StationList = UnfilteredList;
+            
+
             StationList = rsRep.CleanMainList(StationList);
             XDocument doc =  rsRep.CreateNewXML(StationList);
             ValidateXML xmlValidate = new ValidateXML();
@@ -368,6 +391,8 @@ namespace ViewModelsXML.ViewModels
 
 
             this.StationList = new ObservableCollection<RadioStation>(query);
+
+            searchString = "";
         }
 
 

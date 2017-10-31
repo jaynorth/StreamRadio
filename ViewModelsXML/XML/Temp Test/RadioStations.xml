@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="10">
+    <url>http://patmos.cdnstream.com:9300/live?cb=74209.mp3</url>
+    <name>Radio Free Brooklyn</name>
+    <category>various</category>
+    <country>USA</country>
+  </station>
+  <station id="11">
+    <url>http://mozart.wkar.msu.edu:80/wkar-jazz</url>
+    <name>WKAR Jazz</name>
+    <category>Jazz</category>
+    <country>USA</country>
+  </station>
+  <station id="12">
+    <url>http://listen.xray.fm:8000/stream</url>
+    <name>Xray</name>
+    <category>various</category>
+    <country>USA</country>
+  </station>
+  <station id="13">
+    <url>http://40s50s4fun.com:8000/low</url>
+    <name>country alternative 70s</name>
+    <category>country</category>
+    <country>USA</country>
+  </station>
+  <station id="14">
+    <url>http://96.126.107.232:8004</url>
+    <name>World Harmony Mix</name>
+    <category>Ethnic Fusion</category>
+    <country>JAPAN</country>
+  </station>
+  <station id="16">
+    <url>http://50.7.77.114:8479/autodj</url>
+    <name>Cyprus Dub Community Radio</name>
+    <category>Reggae</category>
+    <country>Jamaica</country>
+  </station>
+  <station id="17">
+    <url>http://icecast.radiovox.org:8000/live.mp3</url>
+    <name>RADIOVOX</name>
+    <category>Talk</category>
+    <country>Brazil</country>
+  </station>
+  <station id="19">
+    <url>http://1.ice1.firststreaming.com/kkjz_fm.mp3</url>
+    <name>KKJZ - KJazz 88.1</name>
+    <category>Jazz</category>
+    <country>USA</country>
+  </station>
+  <station id="20">
+    <url>http://sj128.hnux.com</url>
+    <name>SmoothJazz.com</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="21">
+    <url>http://206.190.136.140:5022/;stream/1</url>
+    <name>Music City Roadhouse</name>
+    <category>Electric Blues</category>
+    <country>USA</country>
+  </station>
+  <station id="23">
+    <url>http://stream.xmission.com:8000/kpcw</url>
+    <name>KPCW Radio</name>
+    <category>News</category>
+    <country>USA</country>
+  </station>
+  <station id="24">
+    <url>http://198.178.123.11:7080</url>
+    <name>MPIR Old Time Radio</name>
+    <category>Old Time</category>
+    <country>USA</country>
+  </station>
+  <station id="28">
+    <url>http://streams.wgbh.org:8000/listen.pls</url>
+    <name>WGBH Jazz</name>
+    <category>Jazz</category>
+    <country>--</country>
+  </station>
+  <station id="29">
+    <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_one.m3u8</url>
+    <name>BBC Radio 1</name>
+    <category>--</category>
+    <country>UK</country>
+  </station>
+  <station id="30">
+    <url>http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/nonuk/sbr_low/ak/bbc_radio_two.m3u8</url>
+    <name>BBC Radio 2</name>
+    <category>--</category>
+    <country>UK</country>
+  </station>
+</stations>

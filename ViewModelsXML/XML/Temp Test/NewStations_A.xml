@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+ 
+ 
+  <station id="25">
+    <url>http://live.francra.org:8000/CouleursFM</url>
+    <name>Couleurs FM</name>
+    <category>Rock</category>
+    <country>France</country>
+  </station>
+
+  <station id="27">
+    <url>http://www.wifiradio-frontier.com/pls/pls31656.m3u</url>
+    <name>FM Blues</name>
+    <category>Blues</category>
+    <country>--</country>
+  </station>
+
+
+  <station id="31">
+    <url>http://91.221.151.155:80/;?.mp3</url>
+    <name>Arrow Classic Rock</name>
+    <category>Classic Rock</category>
+    <country>Holland</country>
+  </station>
+ 
+
+</stations>

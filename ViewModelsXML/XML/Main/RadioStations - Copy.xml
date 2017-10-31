@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Main List of Radio Stations XML-->
+<stations>
+  <station id="10">
+    <url>http://96.126.107.232:8004</url>
+    <name>World Harmony Mix</name>
+    <category>Ethnic Fusion</category>
+    <country>JAPAN</country>
+  </station>
+  <station id="11">
+    <url>http://live.francra.org:8000/CouleursFM</url>
+    <name>Couleurs FM</name>
+    <category>Rock</category>
+    <country>France</country>
+  </station>
+  <station id="12">
+    <url>http://www.wifiradio-frontier.com/pls/xxxpls31656.m3u</url>
+    <name>FM Blues</name>
+    <category>Blues</category>
+    <country>--</country>
+  </station>
+  <station id="13">
+    <url>http://91.221.151.155:80/;?.mp3</url>
+    <name>Arrow Classic Rock</name>
+    <category>Classic Rock</category>
+    <country>Holland</country>
+  </station>
+  <station id="14">
+    <url>http://patmos.cdnstream.com:9300/live?cb=74209.mp3</url>
+    <name>Radio Free Brooklyn</name>
+    <category>various</category>
+    <country>USA</country>
+  </station>
+</stations>
